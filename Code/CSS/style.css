@@ -1,0 +1,957 @@
+/* ALL PAGES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(8, 4, 36, 1);
+    display: flex;
+    border-bottom: 5px solid deeppink;
+    padding: 5px;
+    align-items: center;
+}
+
+.navigation-left{
+    display: flex;
+    padding: 0 10px;
+    width: 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-left img{
+    width: 60px;
+}
+
+.navigation-center{
+    width: 70%;
+}
+
+.navigation-right{
+    width: 15%;
+    padding: 0 30px;
+}
+
+.navigation-menu{
+    display: block;
+    margin-left: 20px;
+}
+
+.navigation-menu h3{
+    color: white;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#navigation-dropdown{
+    padding: 20px;
+}
+
+#navigation-dropdown:hover>#dropdown-text{
+    text-decoration: underline;
+    text-decoration-color: lightskyblue;
+}
+
+.dropdown-menu{
+    display: none;
+    background-color: rgb(8, 4, 36);
+    position: absolute;
+    top: 75px;
+    left: 115px;
+    width: 200px;
+    text-align: left;
+}
+
+.dropdown-item{
+    display: block;
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dropdown-item a{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation-dropdown:hover{
+    cursor: pointer;
+}
+
+#navigation-dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(40, 36, 65);
+}
+
+#beta-text{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: deeppink;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#beta-text:hover{
+    background-color: purple;
+    transition: 0.5s;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-text{
+    padding: 10px;
+}
+
+.footer-text h2{
+    font-family: 'Cyberfall', 'Roboto', 'Inter', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-color: rgb(22, 215, 253);
+}
+
+.footer-icons{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+.footer-icons-left{
+    width: 35%;
+}
+
+.footer-icons-center{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-icons-center img{
+    width: 25px;
+    transition: 0.5s;
+}
+
+.footer-icons-center img:hover{
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.footer-icons-right{
+    width: 35%;
+}
+
+/* ALL PAGES - TABLET */
+
+@media screen and (max-width: 800px) {
+    .navigation-left{
+        padding: 0 10px;
+        width: 10%;
+    }
+    .navigation-center{
+        width: 60%;
+    }
+    .navigation-right{
+        padding: 0;
+        width: 30%;
+    }
+    .dropdown-menu{
+        left: 115px;
+    }
+    .footer-icons-left{
+        width: 15%;
+    }
+    .footer-icons-center{
+        width: 70%;
+    }
+    .footer-icons-right{
+        width: 15%;
+    }
+}
+
+/* HOMEPAGE */
+
+.header{
+    width: 100%;
+    margin-top: 79px;
+    height: 650px;
+    background-image: url("../assets/LaforantHeaderBgComplete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    border-bottom: 5px solid rgb(22, 215, 253);
+}
+
+.header-left{
+    width: 25%;
+}
+
+.header-logo{
+    width: 50%;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+
+.header-logo img{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 140%;
+}
+
+.header-right{
+    width: 25%;
+}
+
+.content{
+    width: 100%;
+    height: 2000px;
+    color: white;
+}
+
+.content-top{
+    width: 100%;
+    height: 1300px;
+    background-image: url("../assets/LaforantLineCurveBgComplete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 100px;
+}
+
+.content-title{
+    padding-bottom: 80px;
+}
+
+#welcome-title{
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 60px;
+    padding: 0 30px;
+}
+
+.content-gameplay{
+    display: flex;
+    width: 100%;
+}
+
+.content-gameplay-pic{
+    width: 50%;
+}
+
+.content-gameplay-pic img{
+    border: 5px solid rgb(238, 1, 122);
+    width: 100%;
+}
+
+.content-gameplay-desc{
+    width: 50%;
+    padding: 20px 50px;
+}
+
+#gameplay-title{
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+#gameplay-desc{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.content-agents{
+    padding: 100px 50px;
+    width: 100%;
+    display: flex;
+}
+
+.agents-left{
+    width: 65%;
+    text-align: center;
+}
+
+.agents-right{
+    width: 35%;
+}
+
+.agents-right img{
+    width: 450px;
+    margin-left: 30px;
+}
+
+#agents-title{
+    padding-top: 100px;
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 160px;
+}
+
+#agents-button{
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: palevioletred;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#agents-button:hover{
+    background-color: purple;
+    transition: 0.5s;
+}
+
+.content-bottom{
+    width: 100%;
+    height: 700px;
+    background-image: url("../assets/LaforantMap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-map{
+    padding: 200px;
+}
+
+#map-title{
+    padding-top: 50px;
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 160px;
+}
+
+#map-button{
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#map-button:hover{
+    background-color: lightskyblue;
+    transition: 0.5s;
+}
+
+/* HOMEPAGE TABLET */
+
+@media screen and (max-width: 800px){
+    #welcome-title{
+        font-size: 25px;
+    }
+    .header{
+        height: 400px;
+    }
+    .header-left{
+        width: 20%;
+    }
+    .header-logo{
+        margin-top: 80px;
+        width: 80%;
+    }
+    .header-right{
+        width: 0;
+    }
+    #content-homepage{
+        height: 1700px;
+    }
+    .content-top{
+        height: 1200px;
+        padding: 20px 40px;
+    }
+    .content-bottom{
+        height: 500px;
+    }
+    #welcome-title{
+        font-size: 30px;
+    }
+    .content-title{
+        padding: 30px 0;
+    }
+    .content-gameplay{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-gameplay-desc{
+        width: 90%;
+    }
+    .content-gameplay-pic{
+        width: 70%;
+    }
+    .content-agents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .agents-left{
+        width: 100%;
+    }
+    .agents-right{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .agents-right img{
+        width: 275px;
+        margin-bottom: 50px;
+    }
+    .content-agents{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0;
+    }
+    #gameplay-title{
+        font-size: 40px;
+    }
+    #agents-title{
+        font-size: 70px;
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
+    #agents-button{
+        font-size: 20px;
+    }
+    #map-title{
+        font-size: 70px;
+        padding: 50px 0;
+        margin-top: 30px;
+    }
+    .content-map{
+        padding: 100px;
+    }
+    #map-button{
+        font-size: 20px;
+    }
+}
+
+/* FORM */
+
+#content-form{
+    display: flex;
+    margin-top: 80px;
+    height: 750px;
+    padding: 20px 0;
+    background-image: url("../assets/form/Form\ background.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.form-left, .form-right{
+    width: 35%;
+}
+
+.form-mid{
+    width: 30%;
+}
+
+.form-mid h1{
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+select, input[type=email], input[type=text], input[type=date], input[type=password]{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#terms{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+#submission{
+    margin: 25px 0;
+    padding: 10px 0;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    font-style: italic;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#submission:hover{
+    background-color: lightseagreen;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 800px){
+    .form-left, .form-right{
+        width: 25%;
+    }
+    .form-mid{
+        width: 50%;
+    }
+}
+
+/* FORM SUCCESS */
+
+#content-form-success{
+    text-align: center;
+    margin-top: 80px;
+    height: 545px;
+    padding: 225px 0;
+    background-image: url("../assets/form/Form\ background.png");
+    background-size: cover;
+    width: 100%;
+}
+
+#success-form{
+    font-family: 'Cyberfall', sans-serif;
+    padding: 20px 10px;
+    font-size: 40px;
+}
+
+#continue-button{
+    padding: 10px 20px;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    font-style: italic;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#continue-button:hover{
+    background-color: lightseagreen;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 800px){
+    #content-form-success{
+        padding: 175px 0;
+    }
+}
+
+/* MAPS */
+
+#content-maps{
+    height: 2600px;
+    margin-top: 80px;
+}
+
+.map-info{
+    height: 650px;
+    border-bottom: 5px solid deeppink;
+}
+
+.map-desc{
+    display: flex;
+    padding: 80px 50px;
+    width: 100%;
+    height: 400px;
+}
+
+.map-desc-info{
+    width: 30%;
+}
+
+.map-name{
+    font-family: 'Cyberfall', sans-serif;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.map-caption{
+    padding-top: 20px;
+}
+
+#desc-ascent, #desc-haven{
+    text-align: left;
+}
+
+#desc-breeze, #desc-split{
+    text-align: right;
+}
+
+.map-desc-empty{
+    width: 70%;
+}
+
+.map-pictures{
+    padding: 30px 60px;
+    display: flex;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+}
+
+.map-pictures img{
+    cursor: pointer;
+}
+
+
+.map-minimap{
+    width: 10%;
+    transition: 1s;
+}
+
+.map-minimap:hover{
+    width: 12%;
+    transition: 1s;
+}
+
+.map-scenery{
+    width: 20%;
+    transition: 1s;
+}
+
+.map-scenery:hover{
+    width: 22%;
+    transition: 1s;
+}
+
+.map-bottom{
+    height: 50px;
+}
+
+#ascent{
+    background-image: url("../assets/maps/ascent/Ascent\ Loading\ Screen.jpg");
+    background-size: cover;
+}
+
+#breeze{
+    background-image: url("../assets/maps/breeze/Breeze\ Loading\ Screen.jpg");
+    background-size: cover;
+}
+
+#haven{
+    background-image: url("../assets/maps/haven/Haven\ Loading\ Screen.jpg");
+    background-size: cover;
+}
+
+#split{
+    background-image: url("../assets/maps/split/Split\ Loading\ Screen.jpg");
+    background-size: cover;
+}
+
+@media screen and (max-width:800px){
+    #desc-breeze, #desc-split{
+        text-align: left;
+        display: inline-block;
+    }
+
+    .map-desc-info{
+        width: 50%;
+    }
+
+    
+    .map-pictures{
+        padding: 30px 10px;
+    }
+}
+
+/* SPECS */
+
+#content-specs{
+    background-color: #F6E8E5;
+    height: 1300px;
+}
+
+.content-specs-top{
+    margin-top: 87px;
+    width: 100%;
+    height: 500px;
+}
+
+.content-specs-top img{
+    width: 100%;
+}
+
+.content-specs-bottom{
+    height: 800px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+}
+
+.content-specs-title{
+    padding-bottom: 50px;
+}
+
+#specs-title{
+    color: black;
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.content-specs-general-info{
+    background-color: deeppink;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.specs-info{
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid white;
+}
+
+.specs-info:last-child{
+    border-right: 0;
+}
+
+.specs-info h3{
+    padding-top: 10px;
+}
+
+#specs-icon{
+    width: 10%;
+}
+
+.specs-info img{
+    width: 50px;
+}
+
+.content-specs-detailed-info{
+    padding: 50px 0;
+}
+
+.specs-detailed-info{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.specs-detailed-info:first-child{
+    background-color: black;
+}
+
+#specs-detailed-desc-pic{
+    background-color: black;
+    display: inline-block;
+}
+
+.specs-detailed-desc:first-child{
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.specs-detailed-info:first-child h1{
+    font-family: 'Cyberfall', sans-serif;
+}
+
+.specs-detailed-desc{
+    padding: 20px 20px;
+    width: 33.4%;
+    border: 2px solid white;
+}
+
+.specs-detailed-desc h1{
+    font-size: 40px;
+}
+
+.specs-detailed-desc h3{
+    padding: 0 5px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.specs-detailed-desc h4{
+    padding-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+
+.detailed-info-icon{
+    width: 20%;
+}
+
+#detailed-info-icon-pic{
+    width: 200px;
+}
+
+@media screen and (max-width: 800px){
+    #content-specs{
+        height: 1100px;
+    }
+    .content-specs-top{
+        height: 250px;
+    }
+    #specs-title{
+        font-size: 45px;
+        text-align: center;
+    }
+    .content-specs-bottom{
+        padding: 0 100px;
+        height: 850px;
+    }
+    .content-specs-general-info{
+        flex-direction: column;
+    }
+    .specs-info, #specs-icon{
+        border-right: 0;
+        border-bottom: 2px solid white;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .specs-info h3{
+        padding-top: 0;
+    }
+    .specs-detailed-info:first-child{
+        display: none;
+    }
+    .specs-detailed-info{
+        flex-direction: column;
+    }
+    .specs-detailed-desc{
+        width: 100%;
+        padding: 5px;
+    }
+    .specs-detailed-desc h3{
+        padding: 0;
+        font-size: 20px;
+    }
+    .specs-detailed-desc h4{
+        padding-top: 0;
+    }
+    .detailed-info-icon{
+        width: 10%;
+    }
+}
+
+/* AGENTS */
+
+#content-agents{
+    border-top: 5px solid deeppink;
+    margin-top: 80px;
+    height: 545px;
+    padding: 65px 80px;
+    background-image: url("../assets/agents/Agents\ background.png ");
+    background-size: cover;
+}
+
+#astra, #jett, #raze, #sage, #sova{
+    width: 100%;
+    display: flex;
+}
+
+.agent-data{
+    display: flex;
+}
+
+.info-desc-title{
+    width: 40%;
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.agent-name{
+    width: 20%;
+}
+
+.info-name{
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+    font-size: 110px;
+}
+
+.agent-pic{
+    width: 30%;
+}
+
+.info-pic{
+    margin-left: 60px;
+    height: 450px;
+}
+
+.agent-desc{
+    padding: 80px 50px;
+    width: 40%;
+    margin-left: 60px;
+}
+
+.agent-role{
+    font-family: 'Cyberfall', sans-serif;
+    font-weight: lighter;
+}
+
+.agent-next, .agent-prev{
+    width: 5%;
+}
+
+.agent-next img, .agent-prev img{
+    width: 15px;
+    padding: 220px 0;
+    opacity: 0.4;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.agent-next img:hover, .agent-prev img:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:800px){
+    #content-agents{
+        height: 950px;
+    }
+
+    .agent-data{
+        flex-direction: column;
+        padding: 0px 10%;
+    }
+
+    .agent-desc{
+        padding: 30px 0px;
+        width: 100%;
+        margin-left :7%;
+        color:#080424;
+    }
+
+    .info-desc-title{
+        background-color:#080424;
+        color: white;
+    } 
+}

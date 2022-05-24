@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaForant Pre-Registration</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation-left">
+            <div class="navigation-menu">
+                <a href="homepage.html"><img src="../assets/LaforantLogoShort.png" alt="logoshort"></a>
+            </div>
+            <div class="navigation-menu" id="navigation-dropdown">
+                <h3 id="dropdown-text">GAME</h3>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <div class="dropdown-item">
+                        <a href="agents.html">AGENTS</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="maps.html">MAPS</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="specs.html">SPECS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-center"></div>
+        <div class="navigation-right">
+            <div class="navigation-menu">
+                <a href="form.html" id="beta-text">PLAY BETA</a>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="content-form">
+        <div class="form-left">
+        </div>
+        <div class="form-mid">
+            <h1>CREATE YOUR ACCOUNT</h1>
+            <form action="" method="POST">
+                <label for="email" name="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="dob" name="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                <label for="nationality" name="nationality">Nationality</label>
+                <select id="nationality" name="nationality">
+                    <option value="blank">Nationality</option>
+                    <option value="INA">Indonesia</option>
+                    <option value="MAS">Malaysia</option>
+                    <option value="SGP">Singapore</option>
+                    <option value="THA">Thailand</option>
+                    <option value="PHI">Philippines</option>
+                    <option value="VIE">Vietnam</option>
+                    <option value="others">Others</option>
+                </select>
+                <label for="username" name="username">Username</label>
+                <input type="text" id="username" name="username">
+                <label for="password" name="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="password-confirmation" name="password-confirmation">Confirm Password</label>
+                <input type="password" id="password-confirmation" name="password-confirmation">
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">I accept the <span id="terms">Terms and Conditions</span>.</label>
+                <input id="submission" type="submit" value="CREATE ACCOUNT"></input>
+            </form>
+        </div>
+        <div class="form-right">
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            <h2>STAY CONNECTED</h2>
+        </div>
+        <div class="footer-icons">
+            <div class="footer-icons-left">
+
+            </div>
+            <div class="footer-icons-center">
+                <a target="_blank" href="https://www.facebook.com"><img src="../assets/facebook.png"></a>
+                <a target="_blank" href="https://www.youtube.com"><img src="../assets/youtube.png"></a>
+                <a target="_blank" href="https://www.discord.com"><img src="../assets/discord.png"></a>
+                <a target="_blank" href="https://www.instagram.com"><img src="../assets/instagram.png"></a>
+                <a target="_blank" href="https://www.twitter.com"><img src="../assets/twitter.png"></a>
+            </div>
+            <div class="footer-icons-right">
+
+            </div>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
